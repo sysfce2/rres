@@ -236,7 +236,7 @@ typedef struct rresDirEntry {
     unsigned int offset;            // Resource global offset in file
     unsigned int reserved;          // reserved
     unsigned int fileNameSize;      // Resource fileName size (NULL terminator and 4-byte alignment padding considered)
-    char fileName[RRES_MAX_FILENAME_SIZE];  // Resource original fileName (NULL terminated and padded to 4-byte alignment)
+    char fileName[RRES_MAX_FILENAME_SIZE]; // Resource original fileName (NULL terminated and padded to 4-byte alignment)
 } rresDirEntry;
 
 // CDIR: rres central directory
