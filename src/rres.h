@@ -172,10 +172,10 @@
 // Simple log system to avoid printf() calls if required
 // NOTE: Avoiding those calls, also avoids const strings memory usage
 #ifndef RRES_SUPPORT_LOG_INFO
-    #define RRES_SUPPORT_LOG_INFO 1
+    #define RRES_SUPPORT_LOG_INFO
 #endif
 
-#if (RRES_SUPPORT_LOG_INFO == 1)
+#if defined(RRES_SUPPORT_LOG_INFO)
     #define RRES_LOG(...) printf(__VA_ARGS__)
 #else
     #define RRES_LOG(...)
